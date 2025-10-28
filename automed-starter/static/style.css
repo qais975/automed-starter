@@ -1,0 +1,14 @@
+:root { --bg:#0b0f17; --ink:#eaf1ff; --muted:#8da3c7; --brand:#4fd1ff; --card:#111826; }
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial}
+.hero{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;height:52vh;background:linear-gradient(135deg,#021524 0%,#0b0f17 50%),url('https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=1600') center/cover no-repeat}
+.hero .overlay{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(79,209,255,0.25),transparent 60%)}
+.hero h1{font-size:48px;letter-spacing:2px;margin:0}
+.hero p{margin:8px 0 20px;color:var(--muted)}
+.btn{background:var(--brand);color:#00111b;border:none;padding:10px 16px;border-radius:10px;text-decoration:none;cursor:pointer;font-weight:700;margin:0 6px}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid #2a3b58}
+main{max-width:980px;margin:-40px auto 60px;padding:0 16px}
+.card{background:var(--card);border:1px solid #1b2940;border-radius:16px;padding:18px;margin:16px 0}
+.subtitle{margin-top:12px;font-size:18px;color:#d7e6ff;min-height:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:10px}
+.tile{background:#0f1522;border:1px solid #1c2a45;border-radius:12px;padding:14px}
+footer{display:flex;justify-content:center;padding:24px;color:var(--muted)}
